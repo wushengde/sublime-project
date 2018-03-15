@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>prototype</title>
+	<script src="http://apps.bdimg.com/libs/prototype/1.7.1.0/prototype.js"></script>
+	<script>
+		function myFunction(){
+			$("h01").insert("Hello prototype");
+		}
+		Event.observe(window,"load",myFunction);
+	</script>
+</head>
+<body>
+	<h1 id="h01"></h1>
+</body>
+</html>

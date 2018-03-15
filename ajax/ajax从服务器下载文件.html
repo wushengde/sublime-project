@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>ajax从服务器下载文件</title>
+	</head>
+	<body>
+		<div id="demo">
+			<h2>Let Ajax change this text</h2>
+			<button type="button" onclick="loadDoc()">Change text</button>
+		</div>
+		<script>
+			/*			function loadDoc(){
+				var xhttp= new XMLHttpRequest();
+				xhttp.onreadystatechange =function(){
+					if(xhttp.readyState == 4 && xhttp.status == 200){
+						document.getElementById("demo").innerHTML = xhttp.responseText;
+					}
+				};
+				xhttp.open("GET", "ajax-info.txt", true);
+				xhttp.send();
+			}*/
+		function loadDoc() {
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+		if (xhttp.readyState == 4 && xhttp.status == 200) {
+		document.getElementById("demo").innerHTML = xhttp.responseText;
+		}
+		};
+		xhttp.open("GET", "ajax-info.txt", true);
+		xhttp.send();
+		}
+		</script>
+	</body>
+</html>

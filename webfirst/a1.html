@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>盒子模型</title>
+		<style>
+			.box{
+				/*设置边框的宽高样式*/
+				width: 400px;
+				height: 250px;
+				/*设置边框的背景色样式*/b
+				background-color: yellowgreen;
+				/*设置边框上边的样式*/
+				border-top-width: 10px;
+				border-top-style: dotted;
+				border-top-color: green;
+				/*设置边框右边的样式*/
+				border-right-width: 30px;
+				border-right-style: solid;
+				border-right-color:red;
+				/*设置边框底部的样式*/
+				border-bottom-width: 20px;
+				border-bottom-style: double;
+				border-bottom-color: purple;
+				/*设置边框的左边部分的样式*/
+				border-left-width: 40px;
+				border-left-style: dotted;
+				border-left-color: orange;
+			}
+			.box-2{
+				float: left;
+				width: 400px;
+				height: 250px;
+				background-color:#83C75D;
+				border:20px double purple;
+				border-radius: 5px;
+			}
+			.box-3{
+				float:left;
+				width: 0px;
+				height:0px;
+				/*background-color: green;*/
+				/*transparent 是透明的颜色*/
+				border:100px solid transparent;
+				border-top-color: purple;
+				/*border-bottom: 0 none;*/
+			}
+			.demo{
+				float:left;
+				width: 20px;
+				height: 250px;
+				border:0 solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			
+		</div>
+		<hr style="height:20px;background-color:red">
+		<div class="box-2">
+		</div>
+		<div class="demo">
+			
+		</div>
+		<div class="box-3">
+			
+		</div>
+	</body>
+</html>
